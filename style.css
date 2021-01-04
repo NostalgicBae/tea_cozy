@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-family: Helvetica;
     font-size: 22px;
@@ -6,52 +11,70 @@ html {
     opacity: 0.9;
 }
 
-footer {
-    text-align: left;
+header {
+    position: fixed;
+    width: 100%;
+    height: 69px;
+    background-color: black;
+    top: 0;
 }
 
 body {
+    margin-top:69px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 }
 
-
-/******************** Header ********************/
-#header {
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
-    background-color: black;
-    top: 0px;
-    height: 69px;
+footer {
+    text-align: left;
 }
 
-#img-tea-cozy-logo {
+
+/******************** Header ********************/
+#logo {
     height: 50px;
     float: left;
 }
 
-nav ul li {
-    text-decoration: underline;
+nav ul {
     list-style-type: none;
-    float: right;
-    display: block;
-    padding-left: 20px;
+    margin: 0;
+    padding: 0;
+    height: 69px;
+    overflow: hidden;
+    background-color: black;
 }
+
+nav li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: seashell;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: underline;
+  }
 
 /******************* our-mission ********************/
 #our-mission {
     background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
     height: 700px;
     width: 1200px;
-    background-color: black;
     text-align: center;
 }
 
-#tea-of-month {
+#our-mission h2 h4 {
+    background-color: black;
+    opacity: 1;
+}
 
+
+#tea-of-month {
+    text-align: center;
 }
 
 #catalog {
